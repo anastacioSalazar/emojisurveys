@@ -1,0 +1,55 @@
+/* Estilos globales mínimos para la landing — el resto de spacing/colores
+   se maneja con sx={} de MUI en cada componente, así que aquí solo van
+   ajustes que MUI no puede cubrir bien: overflow, breakpoints finos
+   y fixes de imágenes/dispositivos. */
+
+/* Evita scroll horizontal en móviles si algún elemento (ej. carrusel)
+   se desborda por un px de redondeo */
+body,
+#root {
+  overflow-x: hidden;
+}
+
+/* Asegura que toda sección full-bleed (hero, features, cta) ocupe
+   exactamente el ancho del viewport sin importar el padding del body */
+main {
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Imágenes dentro de las cards de resultados / carrusel: nunca deben
+   desbordar su contenedor en pantallas pequeñas */
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajuste fino para los phone mockups (PhoneVideo.jsx): en pantallas
+   angostas, el tamaño fijo de 280x560 es demasiado grande */
+@media (max-width: 600px) {
+  main [style*='width: 280px'] {
+    transform: scale(0.82);
+    transform-origin: top center;
+  }
+}
+
+/* Breakpoint extra para móviles muy chicos (320–375px) donde el
+   padding lateral de MUI Container (16px) sigue dejando texto pegado */
+@media (max-width: 380px) {
+  h1 {
+    font-size: 1.9rem !important;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Reduce el alto del hero en pantallas muy bajas (landscape en móvil)
+   para que el CTA no quede fuera de vista */
+@media (max-height: 480px) and (orientation: landscape) {
+  main > div:first-of-type {
+    height: auto !important;
+    min-height: 100vh;
+    padding-block: 48px;
+  }
+}
