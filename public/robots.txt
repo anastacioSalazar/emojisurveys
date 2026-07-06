@@ -1,0 +1,14 @@
+# robots.txt
+User-agent: *
+Allow: /
+
+# Bloquear archivos internos
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://es.emojisurveys.pro/sitemap.xml
+
+# Host preferido
+Host: https://es.emojisurveys.pro
