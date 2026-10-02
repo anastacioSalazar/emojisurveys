@@ -1,128 +1,198 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#667eea" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#667eea" />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/logodp.png" />
-    <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/logodp.png" />
+  <link rel="manifest" href="/manifest.json" />
 
-    <!-- Preconnects -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Hreflang -->
-    <link rel="alternate" hreflang="es" href="https://es.emojisurveys.pro/" />
-   
-    <link rel="alternate" hreflang="x-default" href="https://es.emojisurveys.pro/" />
+  <!-- hreflang bidireccional ES <-> EN (mismo bloque en emojisurveys.pro) -->
+  <link rel="alternate" hreflang="es" href="https://es.emojisurveys.pro/" />
+  <link rel="alternate" hreflang="en" href="https://emojisurveys.pro/" />
+  <link rel="alternate" hreflang="x-default" href="https://emojisurveys.pro/" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://es.emojisurveys.pro/" />
+  <link rel="canonical" href="https://es.emojisurveys.pro/" />
 
-    <!-- SEO primario -->
-    <title>Encuestas con Emojis Gratis | Crea Encuestas Online y NPS - EmojiSurveys</title>
-    <meta
-      name="description"
-      content="Crea encuestas con emojis gratis. Formularios de feedback, encuestas de satisfacción del cliente y NPS con resultados en tiempo real. Empieza en minutos."
-    />
-    <meta
-      name="keywords"
-      content="encuestas con emojis, crear encuesta online, encuestas gratis, encuestas NPS, feedback de clientes, encuesta de satisfacción, formulario de opinión, encuestas interactivas"
-    />
-    <meta name="author" content="EmojiSurveys" />
+  <!-- SEO primario -->
+  <title>Encuestas con Emojis Gratis y NPS | EmojiSurveys</title>
+  <meta
+    name="description"
+    content="Crea encuestas con emojis gratis: feedback, satisfacción del cliente y NPS con resultados en tiempo real. Comparte por enlace o QR en 30 segundos."
+  />
+  <meta name="author" content="EmojiSurveys" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="EmojiSurveys" />
+  <meta property="og:title" content="Encuestas con Emojis Gratis y NPS | EmojiSurveys" />
+  <meta property="og:description" content="Crea encuestas con emojis, mide la satisfacción de tus clientes y obtén resultados en tiempo real con paneles interactivos." />
+  <meta property="og:image" content="https://es.emojisurveys.pro/og-image.png" />
+  <meta property="og:image:alt" content="Panel de resultados de EmojiSurveys" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://es.emojisurveys.pro/" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="EmojiSurveys" />
-    <meta property="og:title" content="Crea Encuestas con Emojis Gratis | EmojiSurveys" />
-    <meta property="og:description" content="Crea encuestas con emojis, mide la satisfacción de tus clientes y obtén resultados en tiempo real con paneles interactivos." />
-    <meta property="og:image" content="https://es.emojisurveys.pro/og-image.png" />
-    <meta property="og:image:alt" content="Panel de resultados de EmojiSurveys" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:url" content="https://es.emojisurveys.pro/" />
-    <meta property="og:locale" content="es_ES" />
-    <meta property="og:locale:alternate" content="en_US" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Encuestas con Emojis Gratis y NPS | EmojiSurveys" />
+  <meta name="twitter:description" content="Encuestas con emojis, feedback y NPS en minutos. Resultados en tiempo real." />
+  <meta name="twitter:image" content="https://es.emojisurveys.pro/og-image.png" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Crea Encuestas con Emojis Gratis | EmojiSurveys" />
-    <meta name="twitter:description" content="Encuestas con emojis, feedback y NPS en minutos. Resultados en tiempo real." />
-    <meta name="twitter:image" content="https://es.emojisurveys.pro/og-image.png" />
-
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "EmojiSurveys",
-      "url": "https://es.emojisurveys.pro/",
-      "inLanguage": ["es", "en"]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "EmojiSurveys",
-      "url": "https://es.emojisurveys.pro/",
-      "operatingSystem": "Navegador web",
-      "applicationCategory": "Aplicación de Negocios",
-      "description": "Crea encuestas con emojis, valoraciones con estrellas y sliders. Recopila feedback y consulta resultados en tiempo real.",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "MXN",
-        "description": "Plan gratis disponible"
-      }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Cómo crear una encuesta con emojis gratis?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Regístrate en EmojiSurveys, elige tus preguntas con emojis, estrellas o sliders, y comparte el enlace para empezar a recibir respuestas."
-          }
+  <!-- JSON-LD. La Organization usa el MISMO @id que emojisurveys.pro -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://emojisurveys.pro/#organization",
+        "name": "EmojiSurveys",
+        "url": "https://emojisurveys.pro",
+        "logo": "https://emojisurveys.pro/logo26.png",
+        "sameAs": [
+          "https://www.linkedin.com/company/emojisurveys",
+          "https://twitter.com/emojisurveys",
+          "https://es.emojisurveys.pro",
+          "https://app.emojisurveys.pro"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://es.emojisurveys.pro/#website",
+        "name": "EmojiSurveys",
+        "url": "https://es.emojisurveys.pro/",
+        "inLanguage": "es",
+        "publisher": { "@id": "https://emojisurveys.pro/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://es.emojisurveys.pro/#software",
+        "name": "EmojiSurveys",
+        "url": "https://es.emojisurveys.pro/",
+        "inLanguage": "es",
+        "operatingSystem": "Navegador web",
+        "applicationCategory": "BusinessApplication",
+        "description": "Crea encuestas con emojis, valoraciones con estrellas y sliders. Recopila feedback y consulta resultados en tiempo real.",
+        "dateModified": "2026-10-02",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "MXN",
+          "description": "Plan gratis disponible"
         },
-        {
-          "@type": "Question",
-          "name": "¿Qué es una encuesta NPS?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Una encuesta NPS mide la lealtad del cliente preguntando qué tan probable es que recomiende tu producto o servicio."
+        "publisher": { "@id": "https://emojisurveys.pro/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://es.emojisurveys.pro/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cómo crear una encuesta con emojis gratis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Regístrate en EmojiSurveys, elige tus preguntas con emojis, estrellas o sliders, y comparte el enlace para empezar a recibir respuestas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué es una encuesta NPS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una encuesta NPS mide la lealtad del cliente preguntando qué tan probable es que recomiende tu producto o servicio."
+            }
           }
-        }
-      ]
-    }
-    </script>
-  </head>
-  <body>
-    <noscript>
-      <div style="text-align:center; padding:50px; font-family:Georgia,serif; max-width:820px; margin:0 auto;">
-        <h1>Crea Encuestas con Emojis para Medir la Satisfacción de tus Clientes</h1>
-        <p>EmojiSurveys te permite crear encuestas online con emojis, formularios de feedback y encuestas NPS en minutos.</p>
-        <ul style="text-align:left; display:inline-block; line-height:2;">
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    #seo-es-content { font-family: 'Roboto','Helvetica','Arial',sans-serif; color:#1a1a2e; background:linear-gradient(180deg,#fff 0%,#f8f9ff 100%); line-height:1.7; }
+    #seo-es-content h1 { font-size:2rem; font-weight:700; letter-spacing:-.5px; margin:0 0 16px; }
+    #seo-es-content h2 { font-size:1.4rem; font-weight:600; color:#4F46E5; margin:0 0 10px; }
+    #seo-es-content h3 { font-size:1.05rem; font-weight:600; margin:0 0 6px; }
+    #seo-es-content p { font-size:.98rem; color:#4a4a5e; margin:0 0 8px; }
+    #seo-es-content section { padding:28px 0; border-bottom:1px solid #ececf7; }
+    #seo-es-content .quick-answer { font-size:1.05rem; font-weight:500; color:#1a1a2e; background:#f0efff; border-left:3px solid #4F46E5; padding:14px 18px; border-radius:6px; margin:16px 0 8px; }
+    #seo-es-content .faq-item { background:#fff; border:1px solid #ececf7; border-radius:10px; padding:16px 18px; margin-top:14px; }
+    #seo-es-content .faq-item p { margin:0; }
+    #seo-es-content a { color:#4F46E5; font-weight:600; text-decoration:underline; }
+    #seo-es-content .cta-button { display:inline-block; margin-top:12px; padding:12px 26px; background:#4F46E5; color:#fff !important; border-radius:8px; font-weight:700; text-decoration:none !important; }
+    #seo-es-content .site-footer { padding-top:20px; font-size:.95rem; }
+    #seo-es-content .site-footer a { margin-right:18px; }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Contenido estático indexable (no depende de JavaScript).
+       El texto de las FAQ coincide con el JSON-LD de arriba. -->
+  <section id="seo-es-content" style="box-sizing:border-box; max-width:900px; margin:0 auto; padding:60px 20px; overflow-x:hidden;">
+    <header>
+      <h1>Encuestas con Emojis Gratis para Medir la Satisfacción de tus Clientes</h1>
+      <p class="quick-answer">
+        EmojiSurveys te permite crear encuestas online con emojis, formularios de feedback y
+        encuestas NPS en minutos. Compártelas por enlace o código QR y consulta los resultados
+        en tiempo real, sin escribir código.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Qué puedes crear</h2>
+        <ul>
           <li>😀 Preguntas con caritas emoji</li>
           <li>⭐ Valoraciones con estrellas</li>
+          <li>🎚️ Sliders numéricos</li>
+          <li>🎯 Opción múltiple y texto abierto</li>
           <li>📈 Resultados en tiempo real</li>
-          <li>🔗 Enlace compartible</li>
+          <li>🔗 Enlace y código QR para compartir</li>
         </ul>
-        <p><em>Este sitio requiere JavaScript. Actívalo para acceder a todas las funciones.</em></p>
-      </div>
-    </noscript>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+      </section>
+
+      <section>
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq-item">
+          <h3>¿Cómo crear una encuesta con emojis gratis?</h3>
+          <p>Regístrate en EmojiSurveys, elige tus preguntas con emojis, estrellas o sliders, y comparte el enlace para empezar a recibir respuestas.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Qué es una encuesta NPS?</h3>
+          <p>Una encuesta NPS mide la lealtad del cliente preguntando qué tan probable es que recomiende tu producto o servicio.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Empieza gratis</h2>
+        <p>Crea tu primera encuesta con emojis sin tarjeta de crédito y sin configuración larga.</p>
+        <a class="cta-button" href="https://app.emojisurveys.pro" rel="noopener">Crear mi encuesta →</a>
+      </section>
+    </main>
+
+    <!-- Enlaces reales entre los 3 sitios -->
+    <footer class="site-footer">
+      <a href="https://emojisurveys.pro/" hreflang="en" lang="en">English</a>
+      <a href="https://es.emojisurveys.pro/" hreflang="es">Español</a>
+      <a href="https://app.emojisurveys.pro/" rel="noopener">Abrir la app</a>
+    </footer>
+  </section>
+
+  <noscript>
+    <style>#seo-es-content { display:block !important; }</style>
+  </noscript>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
